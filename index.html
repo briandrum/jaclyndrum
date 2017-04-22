@@ -1,61 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jaclyn Drum, Interior Designer</title>
+  <meta charset="utf-8" />
+  <title>Jaclyn Drum • Interior Design • Chagrin Falls</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-background-position@1.0.0/css/tachyons-background-position.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-coordinates@4.0.0/css/tachyons-coordinates.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-display@5.0.0/css/tachyons-display.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-flexbox@2.0.5/css/tachyons-flexbox.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-links@3.0.5/css/tachyons-links.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-lists@2.0.8/css/tachyons-lists.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-max-widths@4.0.0/css/tachyons-max-widths.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-opacity@1.1.4/css/tachyons-opacity.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-position@6.0.0/css/tachyons-position.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-spacing@6.0.0/css/tachyons-spacing.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-text-align@3.0.0/css/tachyons-text-align.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-text-decoration@4.0.0/css/tachyons-text-decoration.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-utilities@2.0.0/css/tachyons-utilities.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-white-space@4.0.3/css/tachyons-white-space.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons-widths@5.1.0/css/tachyons-widths.min.css" />
   <style>
-* {
-  box-sizing: border-box;
+#home {
+  background-image: url("./images/home-bg.jpg");
+  background-size: cover;
+  min-height: calc(200vw/3);
 }
-html, body {
-  background-color: #344177;
-  font-family: "Avenir Next";
-  font-weight: 500;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.vcard {
-  background-color: #fff;
-  box-shadow: 0 0 0.5em 0.5em rgba(27, 34, 61, 0.2);
-  color: #344177;
-  padding: 4em 4em;
-}
-.vcard a:link, .vcard a:visited, .vcard a:hover, .vcard a:focus, .vcard a:active {
-  color: #344177;
-  text-decoration: none;
-}
-.vcard a:hover, .vcard a:focus {
-  border-bottom: 1px #344177 solid;
-}
-.fn {
-  font-size: 1.75em;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-}
-.role, .email, .locality, .region {
-  font-size: 0.75em;
-  letter-spacing: 0.125em;
-  line-height: 2;
-  text-transform: uppercase;
-}
+
   </style>
 </head>
-<body>
-  <div class="vcard">
-    <div class="fn">Jaclyn Drum</div>
-    <div class="role">Interior Designer</div>
-    <div><a class="email" href="mailto:hello@jaclyndrum.com">hello@jaclyndrum.com</a></div>
-    <div class="adr">
-      <span class="locality">Chagrin Falls</span>,
-      <span class="region">Ohio</span>
+<body class="avenir">
+  <header class="bg-navy flex-ns pa0 white" role="banner">
+    <div>
+      <a class="db no-underline nowrap pa3 tc w-100 white" href="/">Jaclyn Drum Interior Design</a>
     </div>
-  </div>
+    <nav>
+      <ul class="flex list ma0 ml3-ns pa0">
+        <li class="flex-auto"><a class="db link pa3 mh1 tc white" href="#home">Home</a></li>
+        <li class="flex-auto"><a class="db link pa3 mh1 tc white" href="#portfolio">Portfolio</a></li>
+        <li class="flex-auto"><a class="db link pa3 mh1 tc white" href="#prices">Prices</a></li>
+        <li class="flex-auto"><a class="db link pa3 ml1 tc white" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content" class="group" role="main">
+    <section class="bg-bottom" id="home">
+      <div class="center mw6-ns">
+        <h1 class="ma0 white">
+          Jaclyn Drum<br />is an interior designer<br />in Chagrin Falls, Ohio
+        </h1>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="center mw6-ns">
+        <h2>
+          Portfolio
+        </h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+      </div>
+    </section>
+    <section class="bg-navy white" id="prices">
+      <div class="center mw6-ns">
+        <h2>
+          Prices
+        </h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="center mw6-ns">
+        <h2>
+          Contact
+        </h2>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+        </p>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <div class="center mw6-ns">
+      <a href="mailto:hello@jaclyndrum.com">hello@jaclyndrum.com</a>
+    </div>
+  </footer>
+<!--
+  <header class="bg-navy pa3 white" role="banner">
+    <a class="db link tc white" href="/">Jaclyn Drum Interior Design</a>
+    <nav class="fixed bg-navy bottom-0 left-0 right-0">
+      <ul class="list ma0 pa0">
+        <li class=""><a class="db link mh0 pa2 tc white" href="#home">Home</a></li>
+        <li class=""><a class="db link mh0 pa2 tc white" href="#portfolio">Portfolio</a></li>
+        <li class=""><a class="db link mh0 pa2 tc white" href="#prices">Prices</a></li>
+        <li class=""><a class="db link ml0 pa2 tc white" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="content" class="group" role="main">
+  </main>
+  <footer role="contentinfo">
+
+  </footer>
+ -->
+
 </body>
 </html>
