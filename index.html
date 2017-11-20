@@ -4,44 +4,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jaclyn Drum, Interior Designer</title>
-  <style>
-    .wf-playfairdisplay-i9 {
-      font-family: 'Playfair Display', serif;
-      font-size: 18px;
-      font-style: italic;
-      font-weight: 900;
-      opacity: 0;
-      text-transform: lowercase;
-      transition: opacity 1s ease;
-    }
-
-    .wf-playfairdisplay-i9-active .wf-playfairdisplay-i9,
-    .wf-playfairdisplay-i9-inactive .wf-playfairdisplay-i9 {
-      opacity: 1;
-    }
-
-    .wf-montserrat-n3 {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 300;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    .wf-montserrat-n3-active .wf-montserrat-n3,
-    .wf-montserrat-n3-inactive .wf-montserrat-n3 {
-      opacity: 1;
-    }
-  </style>
+  <link href="index.css" rel="stylesheet" />
 </head>
 <body>
-  <h1 class="wf-playfairdisplay-i9">
-    About
-  </h1>
-  <p class="wf-montserrat-n3">
-    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-  </p>
+  <header class="u-posFixed u-sizeFull" role="banner">
+    <div class="Nav">
+      <div class="u-md-flex u-lg-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+        <div class="u-flex u-sm-flexJustifyCenter u-flexGrow2">
+          <a class="Nav-brand u-inlineBlock" data-scroll href="/"><strong>Jaclyn Drum</strong> Interior Design</a>
+        </div>
+        <nav class="u-flexGrow1">
+          <ul class="u-flex u-flexJustifyBetween">
+            <li><a class="Nav-item u-block u-textCenter" data-scroll href="#home">Home</a></li>
+            <li><a class="Nav-item u-block u-textCenter" data-scroll href="#portfolio">Portfolio</a></li>
+            <li><a class="Nav-item u-block u-textCenter" data-scroll href="#prices">Prices</a></li>
+            <li><a class="Nav-item u-block u-textCenter" data-scroll href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main role="main">
+    <section id="home" style="background-image: url(img/555503512.jpg); background-position: center; background-size: cover;">
+
+    </section>
+    <section id="portfolio">
+
+    </section>
+    <section id="prices">
+
+    </section>
+    <section id="contact">
+      <div>
+        Get in touch
+      </div>
+    </section>
+  </main>
+  <footer role="contentinfo">
+
+  </footer>
+  <script src="smooth-scroll.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script>
     WebFont.load({
@@ -52,6 +54,9 @@
         ]
       }
     });
+  </script>
+  <script>
+    smoothScroll.init();
   </script>
 <!--
   <div class="vcard">

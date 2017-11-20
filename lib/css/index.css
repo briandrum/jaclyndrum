@@ -1,0 +1,62 @@
+@import "suitcss-base";
+@import "suitcss-utils";
+@import "wf-utils-font";
+@import "tokens.css";
+@import "theme.css";
+
+header {
+  background-color: rgba(251, 246, 242, 0.8);
+  /* background-image: url(img/555503512.jpg); */
+}
+
+body {
+  background-attachment: fixed;
+  background-color: rgb(251, 246, 242);
+  /* background-image: radial-gradient(circle at 0 0, rgb(251, 246, 242) 0, rgb(226, 215, 195) 80vw); */
+  background-size: 100vw;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.Nav-brand {
+  color: var(--color-deep-blue);
+  border-style: solid;
+  border-width: 2px;
+  font-family: var(--font-sans-serif);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  line-height: 12px;
+  margin: 16px 0;
+  padding: 13px 20px 11px;
+  text-transform: uppercase;
+}
+
+.Nav-brand:hover {
+  color: var(--color-bright-blue);
+}
+
+.Nav-brand strong {
+  font-weight: 600;
+}
+
+.Nav-item {
+  color: var(--color-deep-blue);
+  font-family: var(--font-sans-serif);
+  font-weight: 600;
+  padding: 13px 20px 11px;
+}
+
+.Nav-item:hover {
+  color: var(--color-bright-blue);
+}
+
+#home,
+#portfolio,
+#prices,
+#contact {
+  min-height: 100vh;
+}

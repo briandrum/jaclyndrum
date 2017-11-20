@@ -1,0 +1,43 @@
+/**
+ * Theme definition
+ *
+ * This defines the theme in fundamental terms, but not how it is applied to
+ * the components. That is done in `theme-map.css`.
+ */
+
+/**
+ * Breakpoints
+ */
+
+@custom-media --sm-viewport (min-width:320px) and (max-width:640px);
+@custom-media --md-viewport (min-width:640px) and (max-width:960px);
+@custom-media --lg-viewport (min-width:960px);
+
+/**
+ * Colors
+ */
+
+:root {
+
+  /* Primary blues */
+  --color-deep-blue: #2e3f8f;
+  --color-bright-blue: #3c6df0;
+}
+
+/**
+ * Fonts
+ */
+
+:root {
+  --font-sans-serif: "Avenir Next", sans-serif;
+}
+
+/**
+ * Spacing
+ */
+
+:root {
+  --space-small-px: 8px;
+  --space-medium-px: 16px;
+  --space-large-px: 32px;
+}

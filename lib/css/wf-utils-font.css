@@ -1,0 +1,28 @@
+.wf-playfairdisplay-i9 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 900;
+  opacity: 0;
+  text-transform: lowercase;
+  transition: opacity 1s ease;
+}
+
+.wf-playfairdisplay-i9-active .wf-playfairdisplay-i9,
+.wf-playfairdisplay-i9-inactive .wf-playfairdisplay-i9 {
+  opacity: 1;
+}
+
+.wf-montserrat-n3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.wf-montserrat-n3-active .wf-montserrat-n3,
+.wf-montserrat-n3-inactive .wf-montserrat-n3 {
+  opacity: 1;
+}

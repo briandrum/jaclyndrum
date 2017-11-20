@@ -1,0 +1,22 @@
+{
+  "name": "jaclyndrum",
+  "version": "1.0.0",
+  "description": "Website for jaclyndrum.com",
+  "author": "Brian Drum",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/briandrum/jaclyndrum.git"
+  },
+  "scripts": {
+    "build": "npm run setup && npm run preprocess",
+    "preprocess": "suitcss --config config/preprocess.json lib/css/index.css index.css",
+    "setup": "npm install",
+    "watch": "suitcss --watch --config config/preprocess.json lib/css/index.css index.css"
+  },
+  "dependencies": {
+    "suitcss": "^3.0.0"
+  },
+  "devDependencies": {
+    "suitcss-preprocessor": "^4.0.0"
+  }
+}
