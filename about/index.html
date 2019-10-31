@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- #bbinclude "head.inc" -->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JDID</title>
+  <title>Jaclyn Drum Interior Design – Chagrin Falls, Ohio</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,600&display=swap" rel="stylesheet">
-  <link href="../style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <script type="text/javascript" src="../js/instafeed.min.js"></script>
 </head>
+<!-- end bbinclude -->
 <body>
-  <heading>
-    <a href="#">
-      Jaclyn Drum Interior Design
-    </a>
+<!-- #bbinclude "heading.inc"
+#HOME_PAGE#=""
+#ABOUT_PAGE#="is-current"
+#PORTFOLIO_PAGE#=""
+#SERVICES_PAGE#=""
+#CONTACT_PAGE#=""
+-->
+<heading role="banner">
+  <a href="../home/index.html">
+    Jaclyn Drum Interior Design
+  </a>
+  <nav>
+    <ol>
+      <li><a class="" href="../home/index.html">Home</a></li>
+      <li><a class="is-current" href="../about/index.html">About</a></li>
+      <li><a class="" href="../portfolio/index.html">Portfolio</a></li>
+      <li><a class="" href="../services/index.html">Design services</a></li>
+      <li><a class="" href="../contact/index.html">Contact</a></li>
+    </ol>
+  </nav>
+  <details>
+    <summary>Menu</summary>
     <nav>
-      <ul>
-        <li><a href="../">Home</a></li>
-        <li><a href="../about/">About</a></li>
-        <li><a href="../portfolio/">Portfolio</a></li>
-        <li><a href="../services/">Design services</a></li>
-        <li><a href="../contact/">Contact</a></li>
-      </ul>
+      <ol>
+        <li><a class="" href="../home/index.html">Home</a></li>
+        <li><a class="is-current" href="../about/index.html">About</a></li>
+        <li><a class="" href="../portfolio/index.html">Portfolio</a></li>
+        <li><a class="" href="../services/index.html">Design services</a></li>
+        <li><a class="" href="../contact/index.html">Contact</a></li>
+      </ol>
     </nav>
-  </heading>
+  </details>
+</heading>
+<!-- end bbinclude -->
   <main>
     <div>
       <img src="../images/Drum%20Fall%20Mini-18.jpeg">
@@ -32,15 +57,17 @@
       </p>
       <blockquote>
         <p>
-          “The key to great design is capturing the spirit of the client and the essence of the space."
+          The key to great design is capturing the spirit of the client and the essence of the space.
         </p>
       </blockquote>
     </div>
   </main>
-  <footer>
-    <p>
-      Copyright © 2019 Jaclyn Drum Interior Design. All rights reserved.
-    </p>
-  </footer>
+<!-- #bbinclude "footer.inc" -->
+<footer>
+  <p>
+    Copyright © 2019 Jaclyn Drum Interior Design. All rights reserved.
+  </p>
+</footer>
+<!-- end bbinclude -->
 </body>
 </html>

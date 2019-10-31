@@ -14,9 +14,9 @@
 <!-- end bbinclude -->
 <body>
 <!-- #bbinclude "heading.inc"
-#HOME_PAGE#=""
+#HOME_PAGE#="is-current"
 #ABOUT_PAGE#=""
-#PORTFOLIO_PAGE#="is-current"
+#PORTFOLIO_PAGE#=""
 #SERVICES_PAGE#=""
 #CONTACT_PAGE#=""
 -->
@@ -26,9 +26,9 @@
   </a>
   <nav>
     <ol>
-      <li><a class="" href="../home/index.html">Home</a></li>
+      <li><a class="is-current" href="../home/index.html">Home</a></li>
       <li><a class="" href="../about/index.html">About</a></li>
-      <li><a class="is-current" href="../portfolio/index.html">Portfolio</a></li>
+      <li><a class="" href="../portfolio/index.html">Portfolio</a></li>
       <li><a class="" href="../services/index.html">Design services</a></li>
       <li><a class="" href="../contact/index.html">Contact</a></li>
     </ol>
@@ -37,9 +37,9 @@
     <summary>Menu</summary>
     <nav>
       <ol>
-        <li><a class="" href="../home/index.html">Home</a></li>
+        <li><a class="is-current" href="../home/index.html">Home</a></li>
         <li><a class="" href="../about/index.html">About</a></li>
-        <li><a class="is-current" href="../portfolio/index.html">Portfolio</a></li>
+        <li><a class="" href="../portfolio/index.html">Portfolio</a></li>
         <li><a class="" href="../services/index.html">Design services</a></li>
         <li><a class="" href="../contact/index.html">Contact</a></li>
       </ol>
@@ -48,9 +48,12 @@
 </heading>
 <!-- end bbinclude -->
   <main>
-    <div>
-     <h1>Portfolio</h1>
-      <div id="instafeed"></div>
+    <div class="crossfade">
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
     </div>
   </main>
 <!-- #bbinclude "footer.inc" -->
@@ -60,13 +63,5 @@
   </p>
 </footer>
 <!-- end bbinclude -->
-  <script type="text/javascript">
-    var feed = new Instafeed({
-      get: 'tagged',
-      tagName: 'awesome',
-      clientId: 'YOUR_CLIENT_ID'
-    });
-    feed.run();
-  </script>
 </body>
 </html>
