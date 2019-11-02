@@ -23,52 +23,52 @@ body {
   width: 100vw;
 }
 
-heading {
+header {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   justify-content: space-between;
   text-transform: uppercase;
   white-space: nowrap;
 }
 
-heading a {
+header a {
   padding: 1em;
 }
 
-heading > a:link,
-heading > a:visited,
-heading > a:hover,
-heading > a:focus,
-heading > a:active {
+header > a:link,
+header > a:visited,
+header > a:hover,
+header > a:focus,
+header > a:active {
   color: black;
 }
 
-heading > nav {
+header > nav {
   display: none;
   flex: 1 1 auto;
 }
 
-heading > nav ol {
+header > nav ol {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-heading > nav li {
+header > nav li {
   display: block;
 }
 
-heading a:hover,
-heading a.is-current {
+header a:hover,
+header a.is-current {
   color: black;
 }
 
 @media (min-width: 641px) {
 
-  heading > nav {
+  header > nav {
     display: block;
   }
 
@@ -179,16 +179,14 @@ svg {
 blockquote {
   background-color: rgba(0, 0, 0, 0.025);
   border-radius: 0.2em;
-  font-family: 'Mrs Saint Delafield', cursive;
-  font-size: 4em;
+  font-family: "Stalemate", cursive;
+  font-size: 3em;
   line-height: 1.2em;
-  margin: 0;
+  margin: 1em auto;
   max-width: 100%;
   padding: 0.5em 0.5em 0.25em 0.5em;
   position: relative;
-/*
-  width: 9em;
- */
+  text-align: center;
 }
 
 blockquote p {
@@ -196,7 +194,7 @@ blockquote p {
 }
 
 h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1em;
   font-weight: 900;
   text-transform: uppercase;
@@ -239,7 +237,7 @@ h2 {
 
 .crossfade > figure:nth-child(5) {
   animation-delay: 48s;
-  background-image: url("../images/DRUM-204.jpeg");
+  background-image: url("../images/DRUM-227.jpeg");
 }
 
 @keyframes imageAnimation {

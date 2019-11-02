@@ -1,4 +1,4 @@
-<heading role="banner">
+<header role="banner">
   <a href="#relative#home/index.html">
     Jaclyn Drum Interior Design
   </a>
@@ -23,4 +23,4 @@
       </ol>
     </nav>
   </details>
-</heading>
+</header>
