@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- #bbinclude "head.inc" -->
+<!-- #bbinclude "head.inc"
+#PAGE_TITLE#="About"
+-->
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jaclyn Drum Interior Design – Chagrin Falls, Ohio</title>
+  <title>About | Jaclyn Drum Interior Design</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,600%7CStalemate&amp;display=swap" rel="stylesheet">
-  <link href="../css/normalize.css" rel="stylesheet">
+  <link href="../css/suitcss.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
 </head>
 <!-- end bbinclude -->
@@ -18,34 +20,34 @@
 #SERVICES_PAGE#=""
 #CONTACT_PAGE#=""
 -->
-<header role="banner">
-  <a href="../home/index.html">
+<header class="Header" role="banner">
+  <a class="Header-link is-current" href="../home/index.html">
     Jaclyn Drum Interior Design
   </a>
-  <nav>
-    <ol>
-      <li><a class="" href="../home/index.html">Home</a></li>
-      <li><a class="is-current" href="../about/index.html">About</a></li>
-      <li><a class="" href="../portfolio/index.html">Portfolio</a></li>
-      <li><a class="" href="../services/index.html">Design services</a></li>
-      <li><a class="" href="../contact/index.html">Contact</a></li>
+  <nav class="Header-nav">
+    <ol class="Header-navList">
+      <li><a class="Header-link " href="../home/index.html">Home</a></li>
+      <li><a class="Header-link is-current" href="../about/index.html">About</a></li>
+      <li><a class="Header-link " href="../portfolio/index.html">Portfolio</a></li>
+      <li><a class="Header-link " href="../services/index.html">Design services</a></li>
+      <li><a class="Header-link " href="../contact/index.html">Contact</a></li>
     </ol>
   </nav>
-  <details>
-    <summary>Menu</summary>
-    <nav>
-      <ol>
-        <li><a class="" href="../home/index.html">Home</a></li>
-        <li><a class="is-current" href="../about/index.html">About</a></li>
-        <li><a class="" href="../portfolio/index.html">Portfolio</a></li>
-        <li><a class="" href="../services/index.html">Design services</a></li>
-        <li><a class="" href="../contact/index.html">Contact</a></li>
+  <details class="Header-details">
+    <summary class="Header-summary">Menu</summary>
+    <nav class="Header-mobileNav">
+      <ol class="Header-mobileNavList">
+        <li class="Header-mobileNavListItem"><a class="Header-mobileNavlink " href="../home/index.html">Home</a></li>
+        <li class="Header-mobileNavListItem"><a class="Header-mobileNavlink is-current" href="../about/index.html">About</a></li>
+        <li class="Header-mobileNavListItem"><a class="Header-mobileNavlink " href="../portfolio/index.html">Portfolio</a></li>
+        <li class="Header-mobileNavListItem"><a class="Header-mobileNavlink " href="../services/index.html">Design services</a></li>
+        <li class="Header-mobileNavListItem"><a class="Header-mobileNavlink " href="../contact/index.html">Contact</a></li>
       </ol>
     </nav>
   </details>
 </header>
 <!-- end bbinclude -->
-  <main>
+  <main class="Main">
     <div style="flex:1 1 50%;margin:1em;text-align:center">
       <figure style="box-shadow:0 0 1em rgba(0,0,0,0.1);display:inline-block;padding:1em">
         <img src="../images/Drum%20Fall%20Mini-18.jpeg" width="400" alt="A portrait of Jaclyn Drum, Interior Designer">
@@ -53,15 +55,15 @@
     </div>
     <div style="flex:1 1 50%;margin:1em">
       <p>Jaclyn Drum grew up in a suburb of Cleveland, Ohio and received her Bachelor of Science in Human and Consumer Sciences degree in Interior Architecture from Ohio University. She began her career in design as an architectural sales representative for Lamin-Art. Then she moved onto designing model homes and real estate sales centers around the country. She next worked at Kaufman Segal Design in Chicago designing high-end residential and commercial spaces. After that she worked in high-end furniture and lighting sales for Holly Hunt in the Chicago showroom. She opened her own firm in 2017 in Chagrin Falls, a suburb of Cleveland, Ohio. Jaclyn enjoys a more modern space with some traditional flair.</p>
-      <blockquote style="max-width:7em">
-        <p>The key to great design is capturing the spirit of the client and the essence of the space.</p>
+      <blockquote style="max-width:8em">
+        <p>The key to great design is capturing the spirit of the client and the essence of the&nbsp;space.</p>
       </blockquote>
     </div>
   </main>
 <!-- #bbinclude "footer.inc" -->
-<footer>
-  <p>
-    Copyright&nbsp;©&nbsp;2019&nbsp;Jaclyn&nbsp;Drum&nbsp;Interior&nbsp;Design. All&nbsp;rights&nbsp;reserved.
+<footer class="Footer">
+  <p class="Footer-legal">
+    <span class="u-textNoWrap">Copyright © 2019 Jaclyn Drum Interior Design.</span> <span class="u-textNoWrap">All rights reserved.</span>
   </p>
 </footer>
 <!-- end bbinclude -->

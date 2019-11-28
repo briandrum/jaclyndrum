@@ -1,5 +1,5 @@
-<footer>
-  <p>
-    Copyright&nbsp;©&nbsp;2019&nbsp;Jaclyn&nbsp;Drum&nbsp;Interior&nbsp;Design. All&nbsp;rights&nbsp;reserved.
+<footer class="Footer">
+  <p class="Footer-legal">
+    <span class="u-textNoWrap">Copyright © 2019 Jaclyn Drum Interior Design.</span> <span class="u-textNoWrap">All rights reserved.</span>
   </p>
 </footer>

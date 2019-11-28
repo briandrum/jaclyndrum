@@ -17,13 +17,22 @@ body {
   grid-template-columns: 100vw;
   grid-template-rows: auto 1fr auto;
   line-height: 1.5;
-  margin: 0;
   min-height: 100vh;
   padding: 0;
   width: 100vw;
 }
 
-header {
+img {
+  display: block;
+  max-width: 100%;
+}
+
+svg {
+  height: 24px;
+  width: 24px;
+}
+
+.Header {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   display: flex;
@@ -34,51 +43,36 @@ header {
   white-space: nowrap;
 }
 
-header a {
-  padding: 1em;
-}
-
-header > a:link,
-header > a:visited,
-header > a:hover,
-header > a:focus,
-header > a:active {
-  color: black;
-}
-
-header > nav {
+.Header-nav {
   display: none;
   flex: 1 1 auto;
 }
 
-header > nav ol {
+.Header-navList {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-header > nav li {
+.Header-link {
   display: block;
+  padding: 1em;
 }
 
-header a:hover,
-header a.is-current {
-  color: black;
+.Header-link:link,
+.Header-link:visited,
+.Header-link:hover,
+.Header-link:active {
+  color: silver;
 }
 
-@media (min-width: 641px) {
-
-  header > nav {
-    display: block;
-  }
-
-  details {
-    display: none;
-  }
-
+.Header-link:hover,
+.Header-link:focus,
+.Header-link.is-current {
+  color: dimgray;
 }
 
-summary {
+.Header-summary {
   cursor: default;
   height: 0;
   outline: none;
@@ -91,9 +85,9 @@ summary {
   width: 4em;
 }
 
-summary::before {
+.Header-summary::before {
   bottom: 0;
-  content: "☰";
+  content: "\2630";
   font-size: 2em;
   left: 0;
   line-height: 2;
@@ -103,15 +97,15 @@ summary::before {
   top: 0;
 }
 
-details[open] summary::before {
-  content: "✕";
+.Header-details[open] .Header-summary::before {
+  content: "\2715";
 }
 
-summary::-webkit-details-marker {
+.Header-summary::-webkit-details-marker {
   display: none;
 }
 
-details nav {
+.Header-mobileNav {
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -122,7 +116,7 @@ details nav {
   right: 0;
 }
 
-details ol {
+.Header-mobileNavList {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -130,50 +124,89 @@ details ol {
   padding: 0;
 }
 
-details li {
+.Header-mobileNavListItem {
   align-items: center;
   display: flex;
   flex: 1 1 auto;
   justify-content: center;
 }
 
-details a {
+.Header-mobileNavlink {
   display: block;
   flex: 1 1 auto;
+  padding: 1em;
   text-align: center;
 }
 
-main {
+@media (min-width: 641px) {
+
+  .Header-nav {
+    display: block;
+  }
+
+  .Header-details {
+    display: none;
+  }
+
+}
+
+.Portfolio {
+  margin: 0 auto;
+}
+
+.Portfolio--constrained {
+  max-width: 800px;
+}
+
+.Portfolio-title {
+  align-items: center;
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  justify-content: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+.Portfolio-figure {
+  text-align: center;
+}
+
+.Portfolio-image {
+  padding: 20px;
+}
+
+.Portfolio-figcaption {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.Main {
   margin: 0 auto;
   max-width: 1200px;
 }
 
+.Main--alignCenter {
+  justify-content: center;
+}
+
 @media (min-width: 641px) {
-  main {
+  .Main {
     align-items: center;
     display: flex;
   }
 }
 
-footer {
+.Footer {
   padding: 1em;
 }
 
-footer p {
+.Footer .Footer-legal {
   font-size: 14px;
   margin: 0;
   text-align: right;
-}
-
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-svg {
-  height: 16px;
-  width: 16px;
 }
 
 blockquote {
@@ -181,7 +214,7 @@ blockquote {
   border-radius: 0.2em;
   font-family: "Stalemate", cursive;
   font-size: 3em;
-  line-height: 1.2em;
+  line-height: 1em;
   margin: 1em auto;
   max-width: 100%;
   padding: 0.5em 0.5em 0.25em 0.5em;
@@ -200,8 +233,15 @@ h2 {
   text-transform: uppercase;
 }
 
-.crossfade > figure {
-  animation: imageAnimation 60s linear infinite 0s;
+.Vcard {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.Slideshow > .Slide {
+  animation: SlideShowAnimation 60s linear infinite 0s;
   backface-visibility: hidden;
   background-size: cover;
   background-position: center center;
@@ -216,31 +256,31 @@ h2 {
   z-index: -1;
 }
 
-.crossfade > figure:nth-child(1) {
+.Slideshow > .Slide:nth-child(1) {
   background-image: url("../images/DRUM-3-2.jpeg");
 }
 
-.crossfade > figure:nth-child(2) {
+.Slideshow > .Slide:nth-child(2) {
   animation-delay: 12s;
   background-image: url("../images/DRUM-13.jpeg");
 }
 
-.crossfade > figure:nth-child(3) {
+.Slideshow > .Slide:nth-child(3) {
   animation-delay: 24s;
   background-image: url("../images/DRUM-23.jpeg");
 }
 
-.crossfade > figure:nth-child(4) {
+.Slideshow > .Slide:nth-child(4) {
   animation-delay: 36s;
   background-image: url("../images/DRUM-204.jpeg");
 }
 
-.crossfade > figure:nth-child(5) {
+.Slideshow > .Slide:nth-child(5) {
   animation-delay: 48s;
   background-image: url("../images/DRUM-227.jpeg");
 }
 
-@keyframes imageAnimation {
+@keyframes SlideShowAnimation {
   0% {
     animation-timing-function: ease-in;
     opacity: 0;
